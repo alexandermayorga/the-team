@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Routes from './Routes';
+import { BrowserRouter } from 'react-router-dom';
+import './Resources/css/app.css'
+import { firebase } from "./firebase";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = (props) => {
+  return (
+    <BrowserRouter>
+      <Routes {...props}/>
+    </BrowserRouter>
+  )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+firebase.auth().onAuthStateChanged((user)=>{
+  ReactDOM.render(
+    <React.StrictMode>
+      <App user={user}/>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+})
+
