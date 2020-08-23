@@ -1,0 +1,222 @@
+/*=============================
+            FEATURED
+===============================*/
+
+.featured_wrapper {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 90px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.featured_stripes {
+    position: relative;
+    .stripe {
+        width: 230px;
+        height: 1200px;
+        position: absolute;
+    }
+}
+.featured_text {
+    position: relative;
+    font-family: $font-heading;
+}
+
+.featured_number {
+    font-size: 270px;
+    color: $color-light-shade;
+    transform: translate(260px,170px);
+    position: absolute;
+}
+
+.featured_player {
+    width: 500px;
+    height: 500px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+}
+.featured_first {
+    position: absolute;
+    background: $color-dark-shade;
+    color: $color-light-shade;
+    font-size: 92px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+
+.featured_second {
+    position: absolute;
+    background: $color-dark-shade;
+    color: $color-light-shade;
+    font-size: 92px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+
+/*=============================
+            MATCHES HOME
+===============================*/
+
+.home_matches_wrapper {
+    background: $color-primary;
+    margin-top:9px;
+    padding: 50px 0px;
+    .home_matches {
+        flex-wrap: wrap;
+        display: flex;
+        margin-top: 60px;
+    }
+    
+    .home_matches .item {
+        width: 50%;
+        margin: 35px 0px;
+    }
+    
+    .home_matches .item .wrapper {
+        padding-right:30px;
+    }
+}
+
+
+/*=============================
+            MATCHES BLOCK
+===============================*/
+
+.match_block{
+    .match_date{
+        color:$color-light-shade;
+        font-size:18px;
+    }
+    .match_top,
+    .match_bottom {
+        display: flex;
+        .left {
+            background: $color-light-shade; 
+            font-family: $font-heading;
+            flex-grow: 1;
+            margin-right: 5px;
+            padding: 10px;
+        }
+        .left div,
+        .left div {
+           float:left
+       }
+       .left .icon,
+       .left .icon {
+           width: 50px;
+           height: 50px;
+           background-size: cover !important;
+       }
+       .left .team_name,
+       .left .team_name {
+           font-size: 30px;
+           padding: 6px 10px;
+       }
+       .right { 
+            background: $color-dark-shade;
+            width: 70px;
+            color: $color-light-shade;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 6px;
+        } 
+    }
+
+    .match_bottom {
+        margin-top: 5px;
+    }
+
+}
+
+
+
+/*=============================
+            MEET THE PLAYERS
+===============================*/
+.home_meetplayers { 
+    @include clearfix;
+    background: $color-light-shade;
+
+    &_wrapper {
+        padding-bottom: 100px;
+    }
+
+    .home_card_wrapper {
+        position: relative;
+        float: left;
+        width: 630px;
+        min-height: 600px;
+    }
+    
+    .home_text_wrapper {
+        float: right;
+        width: 390px;
+        margin-top: 70px;
+    }
+    
+}
+
+
+
+/*=============================
+         PROMOTION
+===============================*/
+
+.promotion_wrapper {
+    padding: 30px 0px 130px 0px;
+
+    .promotion_animation {
+        display: flex;
+        padding: 80px 0px 30px 0px;
+        .left { 
+            text-transform: uppercase;
+            font-size: 150px;
+            font-family: $font-heading;
+            flex-grow: 1;
+            color:#d5ebfd;
+            line-height: 135px;
+        }
+        .left span {
+            display:block;
+         }
+        
+        .right {
+            line-height: 135px;
+        }
+        
+        .right div{
+            width: 280px;
+            height: 280px;
+            background-size: contain !important;
+        }
+    }
+    
+    .enroll_{
+        &wrapper {
+            text-align: center;
+        }
+        
+        &title {
+            font-family: $font-heading;
+            font-size: 26px;
+            color: $color-dark-grey;
+        }
+        
+        &discl {
+            font-weight: 300;
+            font-size: 12px;
+            width: 271px;
+            margin: 0 auto;
+            padding: 10px 0px;
+        }
+        
+        &input {
+            width: 330px;
+            margin: 0 auto;
+            padding: 10px 0px;
+        }
+    }
+}
+

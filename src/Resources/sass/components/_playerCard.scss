@@ -1,0 +1,46 @@
+
+/*=============================
+            PLAYER CARD
+===============================*/
+
+
+.player_card_wrapper {
+    background: $color-light-shade;
+    border: 1px solid $color-light-grey;
+    width: 300px;
+    padding: 10px 10px 20px 10px;
+    font-family: $font-heading;
+
+    .player_card_thmb {
+        border: 1px solid $color-light-grey;
+        width:100%;
+        height:250px;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+    }
+    
+    .player_card_nfo {
+        position: relative;
+    }
+    .player_card_number {
+        color: $color-light-accent;
+        font-size: 185px;
+        text-align: right;
+        line-height: 160px;
+    }
+    
+    .player_card_name {
+        position: absolute;
+        bottom: 0px;
+        span { 
+            display: block;
+            font-size: 25px;
+            color: $color-dark-shade;
+        }    
+    }
+    
+}
+
+
+

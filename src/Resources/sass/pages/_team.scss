@@ -1,0 +1,35 @@
+/*=============================
+         THE TEAM
+===============================*/
+
+.the_team_container {
+    margin-top: 96px;
+    padding: 20px;
+    background-size: 5px 5px !important;
+    min-height:100vh;
+}
+
+.team_category_wrapper {
+    .title {
+        font-size: 90px;
+        margin: 30px 0px;
+        font-family: 'Righteous', cursive;
+        color: darken($color-light-accent, $amount: 1);
+    }
+    
+    .team_cards {
+        display: flex;
+        flex-wrap: wrap;
+        @media(max-width: 768px){
+            justify-content: center;
+        }
+        .item{
+            margin-right: 20px;
+            margin-bottom: 20px;
+            @media(max-width: 768px){
+                margin-right: 0;
+            }
+        }
+    }
+}
+

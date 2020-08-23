@@ -1,0 +1,23 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin bp_tablet_up {
+    @media (min-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+  }
+  @mixin bp_desktop_sm_up {
+    @media (min-width: #{$breakpoint-desktop-sm}) {
+      @content;
+    }
+  }
+  @mixin bp_desktop_lg_up {
+    @media (min-width: #{$breakpoint-desktop-lg}) {
+      @content;
+    }
+  }

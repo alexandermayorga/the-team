@@ -1,0 +1,75 @@
+/*=============================
+         ADMIN
+===============================*/
+
+.admin_container {
+    margin-top: 96px;
+    display:flex;
+
+    .admin_left_nav {
+        min-height: 100vh;
+        background: darken($color-dark-grey, 15);
+        border-right: 2px solid $color-dark-shade;
+    }
+    
+     .admin_right {
+        flex-grow: 1;
+    }
+     .admin_progress {
+        text-align: center;
+        margin: 20px 0px;
+    }
+    
+    .matches_tag_red {
+        font-weight: 700;
+        color: $color-error-label;
+    }
+    
+    .matches_tag_green {
+        font-weight: 700;
+        color: $color-error-success;
+    }
+    
+    h2 {
+        margin: 0px 0px 50px 0px;
+        border-bottom: 1px solid darken($color-light-grey,8);
+        color: darken($color-dark-grey, 4);
+        font-size: 40px;
+    }
+}
+
+
+.user_dashboard {
+    font-size: 60px;
+    font-family: $font-heading;
+    color: #d5ebfe;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.select_team_layout{
+    .wrapper{
+        display: flex;
+        .left {
+            flex-grow: 1;
+        }
+    }
+
+    input[name=result_local_input],
+    input[name=result_away_input] {
+        width: 60px;
+        text-align: center;
+        background: $color-primary;
+        color: $color-light-shade;
+    }
+}
+
+
+.admin_submit button {
+    font-size: 20px;
+    margin: 40px 0px;
+    background: $color-dark-shade;
+    cursor: pointer;
+}
+
+

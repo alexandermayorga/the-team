@@ -1,0 +1,25 @@
+/*=============================
+            SIGN IN
+===============================*/
+
+.signin_wrapper {
+    margin-top: 96px;
+    padding: 20px;
+    min-height: 70VH;
+    text-align: center;
+    form {
+        width: 350px;
+        margin: 0 auto;
+    }
+    
+    form button {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    h2 {
+        font-family: $font-heading;
+        color: $color-primary;
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,124 @@
+/*=============================
+         THE MATCHES
+===============================*/
+
+//LAYOUT
+.the_matches_{
+    &container {
+        margin-top: 96px;
+    }
+    &wrapper {
+        display: flex;
+
+        .left {
+            flex-grow: 1;
+        }
+        .right {
+           width:400px;
+        }
+        .progress {
+            text-align: center;
+            padding: 60px 0px;
+        }
+    }
+}
+
+//MATCH BOXES
+.match_box_big {
+    @include clearfix;
+    width:100%;
+    border-bottom: 2px solid $color-primary;
+    padding: 20px;
+    height: 143px;
+
+    .block_wraper {
+        margin-right: 50px;
+        float: left;
+        &.nfo {
+            border-left: 1px solid $color-primary;
+            height: 102px;
+            padding-left: 10px;
+            font-weight: 300;
+            color: lighten($color: $color-dark-grey, $amount: 5);
+        }
+        
+        &.nfo div {
+            margin: 5px 0px;
+        }
+    }
+    
+    .block {
+        display: flex;
+
+        .team,
+        .result {
+            font-size: 21px;
+            line-height: 51px;
+            margin-left: 18px;
+            font-weight: 300;
+        }
+        
+        .result {
+            font-weight: 500;
+        }
+    }
+    
+    .icon{
+        width: 50px;
+        height: 50px;
+        background-size: cover !important;
+    }    
+
+}
+
+
+
+
+//MATCH FILTERS
+.match_filters {
+     display: flex;
+     border-bottom: 1px solid $color-dark-shade;
+     background: lighten($color-light-accent, $amount: 2);
+
+     &_box {
+        padding: 10px 20px;
+        border-right: 1px solid $color-dark-shade;
+        background: lighten($color-light-accent, $amount: 2);
+    }
+
+     .tag {
+        font-weight: 300;
+        margin-bottom: 5px;
+        color: $color-dark-grey;
+    }
+    .option {
+        background: $color-light-shade;
+        padding: 5px 9px;
+        border-radius: 3px;
+        font-size: 13px;
+        margin-right: 5px;
+        cursor: pointer;
+        &.active {
+            background: darken($color-primary, $amount: 12);
+            color: $color-light-shade;
+        }
+    }
+    
+    .cont {
+        display: flex;
+    }
+    
+}
+
+
+
+.league_table_wrapper {
+    border-left: 1px solid $color-primary;
+    .title {
+        padding: 22px;
+        font-size: 22px;
+        color: $color-light-shade;
+        background: $color-primary;
+        border-bottom: 1px solid $color-dark-shade;
+    }
+}
