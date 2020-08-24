@@ -1,4 +1,24 @@
 .container {
-    width:1024px;
+    width: 100%;
+    margin:0 auto;
+
+    @include bp_md_up{
+        max-width: 1024px;
+        // max-width: 900px;
+    }
+}
+
+/*=============================
+            FEATURED
+===============================*/
+.featured_wrapper {
     margin: 0 auto;
+    width: 100%;
+    margin-top: 90px;
+    height: 800px;
+    overflow: hidden;
+
+    @include bp_md_up{
+        width: 1280px;
+    }
 }
