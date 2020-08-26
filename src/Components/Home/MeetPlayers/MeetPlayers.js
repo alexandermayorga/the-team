@@ -29,17 +29,17 @@ export default class MeetPlayers extends Component {
                                 <Cards show={this.state.show}/>
                             </div>
                             <div className="home_text_wrapper">
-                                <Tag bck="#0e1731" size="100px" color="#ffffff" add={{
+                                <Tag bck="#0e1731" size={`${window.outerWidth < 768 ? "70px" : "100px"}`} color="#ffffff" add={{
                                     marginBottom: '20px'
                                 }}>
                                     Meet
                                 </Tag>
-                                <Tag bck="#0e1731" size="100px" color="#ffffff" add={{
+                                <Tag bck="#0e1731" size={`${window.outerWidth < 768 ? "70px" : "100px"}`} color="#ffffff" add={{
                                     marginBottom: '20px'
                                 }}>
                                     The
                                 </Tag>
-                                <Tag bck="#0e1731" size="100px" color="#ffffff" add={{
+                                <Tag bck="#0e1731" size={`${window.outerWidth < 768 ? "70px" : "100px"}`} color="#ffffff" add={{
                                     marginBottom: '20px'
                                 }}>
                                     Players

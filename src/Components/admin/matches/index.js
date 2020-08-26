@@ -69,9 +69,13 @@ class AdminMatches extends Component {
                         </TableBody>
                     </Table>
                 </TableContainer>
-                <div className="admin_progress">
-                    {this.state.isLoading && <CircularProgress thickness={7} style={{color:'#98c5e9'}}/>}
-                </div>
+                {
+                    this.state.isLoading
+                    &&
+                    <div className="admin_progress">
+                        <CircularProgress thickness={7} style={{ color: '#98c5e9' }} />
+                    </div>
+                }
             </AdminLayout>
         )
     }

@@ -73,9 +73,14 @@ export default class AdminPlayers extends Component {
                         </TableBody>
                     </Table>
                 </TableContainer>
+                
+                {
+                this.state.isLoading 
+                && 
                 <div className="admin_progress">
-                    {this.state.isLoading && <CircularProgress thickness={7} style={{ color: '#98c5e9' }} />}
+                    <CircularProgress thickness={7} style={{ color: '#98c5e9' }} />
                 </div>
+                }
             </AdminLayout>
         )
     }

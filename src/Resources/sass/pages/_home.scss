@@ -59,15 +59,17 @@
         flex-wrap: wrap;
         display: flex;
         margin-top: 60px;
-    }
-    
-    .home_matches .item {
-        width: 50%;
-        margin: 35px 0px;
-    }
-    
-    .home_matches .item .wrapper {
-        padding-right:30px;
+        .item {
+            width: 100%;
+            margin: 35px 0px;
+            @include bp_tablet_up{
+                width: 50%;
+
+                .wrapper {
+                    padding-right:30px;
+                }
+            }
+        }
     }
 }
 
@@ -103,16 +105,24 @@
        }
        .left .team_name,
        .left .team_name {
-           font-size: 30px;
-           padding: 6px 10px;
+           font-size: 22px;
+           padding: 10px;
+           @include bp_tablet_up{
+            font-size: 30px;
+            padding: 6px 10px;
+           }
        }
        .right { 
             background: $color-dark-shade;
             width: 70px;
             color: $color-light-shade;
-            font-size: 50px;
             text-align: center;
-            padding-top: 6px;
+            font-size: 40px;
+            padding-top: 12px;
+            @include bp_tablet_up{
+                font-size: 50px;
+                padding-top: 6px;
+            }
         } 
     }
 
@@ -128,24 +138,29 @@
             MEET THE PLAYERS
 ===============================*/
 .home_meetplayers { 
-    @include clearfix;
     background: $color-light-shade;
 
     &_wrapper {
+        @include clearfix;
         padding-bottom: 100px;
     }
 
     .home_card_wrapper {
         position: relative;
-        float: left;
-        width: 630px;
+        width: 100%;
         min-height: 600px;
+        @include bp_tablet_up{
+            float: left;
+            width: 615px;
+        }
     }
     
     .home_text_wrapper {
-        float: right;
-        width: 390px;
+        width: 375px;
         margin-top: 70px;
+        @include bp_tablet_up{
+            float: right;
+        }
     }
     
 }
@@ -161,14 +176,24 @@
 
     .promotion_animation {
         display: flex;
-        padding: 80px 0px 30px 0px;
+        flex-wrap: wrap;
+        padding: 50px 0px 30px 0px;
+        @include bp_tablet_up{
+            padding: 80px 0px 30px 0px;
+        }
         .left { 
+            font-size: 100px;
+            line-height: 95px;
             text-transform: uppercase;
-            font-size: 150px;
             font-family: $font-heading;
             flex-grow: 1;
             color:#d5ebfd;
-            line-height: 135px;
+            margin-bottom: 25px;
+            @include bp_tablet_up{
+                font-size: 150px;
+                line-height: 135px;
+                margin-bottom: 0;
+            }
         }
         .left span {
             display:block;
@@ -176,6 +201,12 @@
         
         .right {
             line-height: 135px;
+            display: flex;
+            justify-content: center;
+            flex-basis: 100%;
+            @include bp_tablet_up{
+                flex-basis: 280px;
+            }
         }
         
         .right div{

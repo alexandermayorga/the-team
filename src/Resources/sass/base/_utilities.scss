@@ -1,3 +1,10 @@
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 .bck_{
     &blue { 
         background: $color-dark-shade; 

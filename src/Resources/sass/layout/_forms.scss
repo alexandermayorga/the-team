@@ -1,7 +1,10 @@
 .editmatch_dialog_wrapper,
 .editplayers_dialog_wrapper {
     padding: 20px;
-    width: 480px;
+    width: 100%;
+    @include bp_tablet_up{
+        width: 480px;
+    }
 }
 
 .split_fields {
